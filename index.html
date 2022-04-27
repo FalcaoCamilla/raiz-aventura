@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Raiz Aventura</title>
+</head>
+<body>
+    <header>
+        <div class="flex-container menu">
+            <img src="/imagens/logoraiz.png" alt="logo" class="logo-raiz">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#quem-sou">Quem sou</a></li>
+                    <li><a href="#passeios">Passeios</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="bg">
+            <div class="flex-container apresentacao background">
+                <div class="txt-apresentacao">
+                    <h2>Raiz Aventura<br>Turismo 4x4</h2>
+                    <p>O melhor turismo do Rio Grando do Norte para você!</p>
+                    <a href="https://api.whatsapp.com/send?phone=558499923709&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Raiz%20Aventura">Saiba Mais!</a>
+                </div>
+
+                <div>
+                    <div><img src="/imagens/jipeturismo.png" alt="banner de apresentação" class="jipe"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg1">
+            <div class="flex-container apresentacao" id="quem-sou">
+                <div> 
+                    <h2>Quem sou</h2>
+                    <p>Me chamo Rivelino Carvalho e sou guia turístico da Cidade do Sol!
+                        O Rio Grande do Norte é a terra pela qual nutro profundo carinho e orgulho.
+                        Há 23 anos me aventuro desbravando essa terra rica, com muito cuidado e apreço pela sua vasta natureza.
+                        Sob esse solzão, guio os passeios mais completos do turismo. Mas isso é assunto de uma sessão aqui embaixo, rsrs.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/imagens/riva.jpg" alt="guia rivelino" class="riva">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="flex-container"  id="passeios">
+                <div>
+                    <h2>Passeios</h2>
+                </div>
+
+                <div class="list-passeios">
+
+                    <div class="item-passeio">
+                        <div><img src="/imagens/dunas.jpg" alt="dunas do rn"></div>
+                        <p>A Rota dos Nativos é o passeio ideal para quem curte um
+                            ambiente familiar, calmo e com muita natureza. (...)
+                        </p>
+                        <div class="hoverable">
+                            <span class="hoverable__main"><a href="#passeios">Plano de custo</a></span>
+                            <span class="hoverable__tooltip">Adulto - R$100,00 | Criança - R$80,00
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item-passeio">
+                        <div><img src="/imagens/lagoaalcacuz.jpg" alt="lagoa de alcaçuz"></div>
+                        <p>Norte Vip traz consigo uma lagoa inigualável! Essa maravilha é 100%
+                            natural, livre de todo tipo de poluição. A lagoa de alcaçuz conta com alguns atrativos
+                            como (...)
+                        </p>
+                        <div class="hoverable">
+                            <span class="hoverable__main"><a href="#passeios">Plano de custo</a></span>
+                            <span class="hoverable__tooltip">Adulto - R$100,00 | Criança - R$80,00
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="item-passeio">
+                        <div><img src="/imagens/arvoredoamor.jpg" alt="roteiros personalizados"></div>
+                        <p>O passeio perfeito para um casal apaixonado. Reza a lenda de que quem beija embaixo da
+                            Árvore do Amor nunca tem seu relacionamento acabado. (...)
+                        </p>
+                        <div class="hoverable">
+                            <span class="hoverable__main"><a href="#passeios">Plano de custo</a></span>
+                            <span class="hoverable__tooltip">Adulto - R$100,00 | Criança - R$80,00
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>  
+        </div>
+      
+        <div class="image-container" id="galeria">
+            <h2>Galeria</h2>
+        </div>
+           
+    </main>
+
+    <div>
+        <button onclick="backToTop()" id="btntop" ><img src="/imagens/seta.png" height="30px" width="3px"></button>
+        <script>
+            window.onscroll = function(){
+                scroll();
+            }
+            function scroll(){
+                var btn = document.getElementById("btntop")
+                if(document.documentElement.scrollTop>200){
+                    btn.style.display="block";
+                }else{
+                    btn.style.display = "none";
+                }
+            }
+            function backToTop(){
+                document.documentElement.scrollTop = 0;
+
+            }
+        </script>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="contatos">
+                <img src="imagens/insta.png" class="ctt1">
+                <a href="https://www.instagram.com/raizaventura4x4/" class="contato">@raizaventura4x4</a>
+                <img src="imagens/wpp.png" class="ctt2">
+                <a href="https://api.whatsapp.com/send?phone=558499923709&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Raiz%20Aventura" class="contato">(84) 99992-3709</a>
+            </div>
+        </div>
+        <br>
+        <p class="copyright">Feito por Camilla Falcão &copy; Todos os direitos reservados - 2022</p>
+    </footer>
+
+</body>
+</html>
